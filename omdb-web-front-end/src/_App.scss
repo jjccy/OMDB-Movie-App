@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.main-container {
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    min-width: 100%;
+    min-height: 100vh;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all .3s ease-in-out;
+
+    &:not(.searching) {
+        padding-top: 50vh;
+    }
+
+    .search-box {
+        margin-bottom: 45px;
+    }
+
+    .serch-hint {
+        font-size: 4em;
+        color: lightgray;
+        padding: 8px;
+    }
+}
